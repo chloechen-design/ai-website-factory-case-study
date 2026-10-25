@@ -1,0 +1,14 @@
+/* Valeurs exploratoires propres à Penninghen, à confronter à une charte validée. */
+[data-brand="penninghen"] {
+  --brand-ink: #101010;
+  --brand-paper: #f5f5f2;
+  --brand-white: #ffffff;
+  --brand-yellow: #f2dc00;
+  --brand-muted: #666662;
+  --brand-line: #c9c9c3;
+  --brand-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-weight-heavy: 800;
+  --brand-tracking: -0.035em;
+  --brand-label-tracking: 0.055em;
+}

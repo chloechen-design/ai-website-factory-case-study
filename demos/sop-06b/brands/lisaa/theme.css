@@ -1,0 +1,72 @@
+/* Valeurs d'observation provisoires, pas des références de charte validées. */
+[data-brand="lisaa"] {
+  --brand-ink: #181614;
+  --brand-ink-rgb: 24 22 20;
+  --brand-paper: #fffaf5;
+  --brand-white: #ffffff;
+  --brand-accent: #e6533a;
+  --brand-muted: #625c57;
+  --brand-line: #d5cec8;
+  --brand-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-weight-heavy: 800;
+  --brand-tracking: -0.035em;
+  --brand-label-tracking: 0.055em;
+}
+
+.lisaa-area-index { background: var(--color-paper); }
+.lisaa-area-index__inner { width: min(100%, var(--content-width)); margin-inline: auto; }
+.lisaa-area-index .section-heading { grid-template-columns: 1fr; align-items: start; gap: 1rem; margin-bottom: 2rem; }
+.lisaa-area-index__inner nav ol { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.65rem; margin: 0; padding: 0; list-style: none; }
+.lisaa-area-index__inner nav a { display: flex; min-height: 5.5rem; align-items: flex-end; justify-content: space-between; gap: 0.6rem; padding: 0.9rem; border: 1px solid var(--color-rule); font-size: var(--type-small); font-weight: 700; text-decoration: none; }
+.lisaa-area-index__inner nav a:hover { border-color: var(--color-accent); background: var(--color-accent); }
+.lisaa-campus-overview { background: var(--color-ink); color: var(--color-on-ink); }
+.lisaa-campus-overview__inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.6fr); align-items: end; gap: 2rem; width: min(100%, var(--content-width)); margin-inline: auto; }
+.lisaa-campus-overview__label { margin: 0 0 1rem; color: var(--color-accent); font-size: var(--type-caption); font-weight: 700; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.lisaa-campus-overview h2 { max-width: 13ch; margin: 0 0 1rem; font-family: var(--font-display); font-size: var(--type-section); letter-spacing: var(--tracking-display); line-height: 0.92; text-transform: uppercase; }
+.lisaa-campus-overview__inner p:not(.lisaa-campus-overview__label) { max-width: 55ch; color: var(--color-copy-on-dark); }
+.lisaa-campus-overview__inner a { color: var(--color-accent); font-weight: 700; text-underline-offset: 0.3em; }
+.lisaa-campus-overview__count { display: grid; justify-items: end; }
+.lisaa-campus-overview__count strong { color: var(--color-accent); font-family: var(--font-display); font-size: clamp(5rem, 11vw, 10rem); letter-spacing: -0.07em; line-height: 0.85; }
+.lisaa-campus-overview__count span { margin-top: 0.7rem; font-size: var(--type-small); text-align: right; }
+.lisaa-campus-overview .source-note { color: var(--color-copy-on-dark); }
+.lisaa-program-finder { background: var(--color-paper); }
+.lisaa-program-finder__intro, .lisaa-program-finder__filters, .lisaa-program-finder__results, .lisaa-program-finder > .source-note, .lisaa-finder-empty { width: min(100%, var(--content-width)); margin-inline: auto; }
+.lisaa-program-finder__intro .section-heading { grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.7fr); margin-bottom: 1rem; }
+.lisaa-program-finder__intro > p { max-width: 75ch; margin: 0 0 2rem; color: var(--color-muted); font-size: var(--type-small); }
+.lisaa-program-finder__filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; align-items: end; gap: 0.8rem; padding: 1rem 0; border-top: 1px solid var(--color-rule); border-bottom: 1px solid var(--color-rule); }
+.lisaa-finder-field { display: grid; gap: 0.4rem; }
+.lisaa-finder-field label { font-size: var(--type-caption); font-weight: 700; }
+.lisaa-finder-field select { width: 100%; min-height: 3.25rem; padding: 0.65rem 2rem 0.65rem 0.75rem; border: 1px solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-page); color: var(--color-ink); font: inherit; font-size: var(--type-small); }
+.lisaa-program-finder__filters .button { min-height: 3.25rem; cursor: pointer; }
+.lisaa-finder-status { grid-column: 1 / -1; margin: 0; color: var(--color-muted); font-size: var(--type-caption); }
+.lisaa-program-finder__results { display: grid; grid-template-columns: minmax(0, 1fr); }
+.lisaa-finder-result .formation-card { display: grid; grid-template-columns: minmax(9rem, 0.42fr) minmax(0, 1fr) minmax(13rem, 0.65fr); align-items: start; gap: 0.5rem 1.5rem; min-height: 0; padding: 1.25rem 0; border: 0; border-bottom: 1px solid var(--color-rule); background: transparent; color: var(--color-ink); }
+.lisaa-finder-result .program-card__topline { grid-column: 1; grid-row: 1 / span 3; flex-direction: column; }
+.lisaa-finder-result .program-card__family { margin-top: 0.45rem; }
+.lisaa-finder-result .formation-card h3 { grid-column: 2; margin: 0; font-size: clamp(1.25rem, 2vw, 1.8rem); }
+.lisaa-finder-result .program-card__summary { grid-column: 2; margin: 0.35rem 0; }
+.lisaa-finder-result .program-card__attributes { grid-column: 3; grid-row: 1 / span 3; margin: 0; }
+.lisaa-finder-result .formation-card-caption { grid-column: 2; margin: 0; }
+.lisaa-finder-empty { margin-top: 1rem; padding: 1rem; border-left: 3px solid var(--color-accent); background: var(--color-page); }
+.lisaa-finder-empty[hidden] { display: none; }
+.lisaa-finder-result[hidden] { display: none; }
+.lisaa-program-finder > .source-note { line-height: 1.55; }
+.lisaa-program-finder > .source-note a { font-weight: 700; text-underline-offset: 0.25em; }
+@media (max-width: 760px) {
+  .lisaa-area-index__inner nav ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lisaa-area-index__inner nav a { min-height: 4.5rem; }
+  .lisaa-campus-overview__inner { grid-template-columns: 1fr; align-items: start; }
+  .lisaa-campus-overview__count { justify-items: start; }
+  .lisaa-campus-overview__count span { text-align: left; }
+  .lisaa-program-finder__intro .section-heading { grid-template-columns: 1fr; }
+  .lisaa-program-finder__filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lisaa-program-finder__filters .button { align-self: end; }
+  .lisaa-finder-result .formation-card { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+  .lisaa-finder-result .program-card__topline, .lisaa-finder-result .formation-card h3, .lisaa-finder-result .program-card__summary, .lisaa-finder-result .program-card__attributes, .lisaa-finder-result .formation-card-caption { grid-column: 1; grid-row: auto; }
+  .lisaa-finder-result .program-card__topline { flex-direction: row; }
+}
+@media (max-width: 480px) {
+  .lisaa-program-finder__filters { grid-template-columns: 1fr; }
+  .lisaa-program-finder__filters .button { justify-self: start; }
+}

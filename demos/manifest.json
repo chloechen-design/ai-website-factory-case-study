@@ -1,0 +1,116 @@
+{
+  "title": "Galileo AI Experiment — démos de versions",
+  "basePath": "/ai-website-factory-case-study/demos/",
+  "demos": [
+    {
+      "id": "penninghen-v1",
+      "title": "Penninghen — V1",
+      "sop": "Exploration Penninghen avant SOP 06",
+      "status": "historique interactif",
+      "path": "penninghen/v1/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/penninghen/v1/",
+      "dependencies": ["HTML/CSS/JS locaux", "modules ES relatifs", "aucune dépendance npm"],
+      "restrictions": ["Proposition indépendante, non officielle ; contenu de démonstration à ne pas interpréter comme information publiée aujourd’hui."]
+    },
+    {
+      "id": "penninghen-v2",
+      "title": "Penninghen — V2 média",
+      "sop": "Itération média avant SOP 06",
+      "status": "historique interactif",
+      "path": "penninghen/v2-before-media/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/penninghen/v2-before-media/",
+      "dependencies": ["HTML/CSS/JS locaux", "modules ES relatifs", "emplacements médias et sources externes"],
+      "restrictions": ["Aucun média étudiant officiel intégré ; emplacements et liens source. Vérifier le statut des contenus et liens avant publication."]
+    },
+    {
+      "id": "lisaa-06b",
+      "title": "LISAA — diagnostic A/B/C",
+      "sop": "06B",
+      "status": "reconstruction partielle interactive",
+      "path": "sop-06b/prototypes/06b/lisaa/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-06b/prototypes/06b/lisaa/",
+      "dependencies": ["markup et logique diagnostique 06B", "CSS/composants/configuration/contenus partagés copiés depuis l’état SOP 07 courant"],
+      "restrictions": ["Bandeau de reconstruction visible. Les composants et le rendu pixel-perfect historiques 06B ne sont pas récupérés. Les cartes C sont des placeholders, pas des fonctions."]
+    },
+    {
+      "id": "psb-06b",
+      "title": "PSB — diagnostic A/B/C",
+      "sop": "06B",
+      "status": "reconstruction partielle interactive",
+      "path": "sop-06b/prototypes/06b/psb/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-06b/prototypes/06b/psb/",
+      "dependencies": ["markup et logique diagnostique 06B", "CSS/composants/configuration/contenus partagés copiés depuis l’état SOP 07 courant"],
+      "restrictions": ["Bandeau de reconstruction visible. Les composants et le rendu pixel-perfect historiques 06B ne sont pas récupérés. Les cartes C sont des placeholders, pas des fonctions."]
+    },
+    {
+      "id": "sop06c-captures",
+      "title": "SOP 06C — bibliothèque et trois sites",
+      "sop": "06C",
+      "status": "captures historiques",
+      "path": "sop-06c-captures/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-06c-captures/",
+      "dependencies": ["4 captures PNG historiques sélectionnées"],
+      "restrictions": ["PDF et ZIP volumineux exclus. Les captures mobile additionnelles ne sont pas copiées. Les images Penninghen incluent des photos d’illustration Pexels et nécessitent une vigilance sur les droits tiers/personnes reconnaissables."]
+    },
+    {
+      "id": "sop07-before",
+      "title": "SOP 07 — Before",
+      "sop": "07A/B",
+      "status": "captures historiques",
+      "path": "sop-07-before/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-07-before/",
+      "dependencies": ["les mêmes quatre captures SOP 06C ; SHA-256 identiques au paquet original"],
+      "restrictions": ["Ces captures sont l’état avant correction, identique aux captures SOP 06C ; elles ne sont pas un avant/après. Aucune capture SOP07 After n’existe dans l’inventaire."]
+    },
+    {
+      "id": "sop07-current",
+      "title": "État courant — bibliothèque, Penninghen, LISAA, PSB",
+      "sop": "SOP 07B courant",
+      "status": "démonstration courante interactive",
+      "path": "sop-07-current/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-07-current/",
+      "dependencies": ["HTML/CSS/JS copiés", "modules ES", "images Pexels chargées depuis leur URL source dans les données Penninghen"],
+      "restrictions": ["État courant, pas un snapshot historique post-07B scellé. Photos d’illustration, jamais représentatives des écoles ; droits tiers/modèles à confirmer. Contenus et dates à revalider avant publication."]
+    },
+    {
+      "id": "sop07-penninghen",
+      "title": "État courant — Penninghen",
+      "sop": "SOP 07B courant",
+      "status": "démonstration courante interactive",
+      "path": "sop-07-current/sites/penninghen/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-07-current/sites/penninghen/",
+      "dependencies": ["Page Assembler partagé", "composants partagés", "données Penninghen", "images Pexels externes"],
+      "restrictions": ["Proposition exploratoire non officielle ; images illustratives externes, non attribuées à Penninghen. Vérifier droits de tiers/modèles et exactitude du contenu."]
+    },
+    {
+      "id": "sop07-lisaa",
+      "title": "État courant — LISAA",
+      "sop": "SOP 07B courant",
+      "status": "démonstration courante interactive",
+      "path": "sop-07-current/sites/lisaa/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-07-current/sites/lisaa/",
+      "dependencies": ["Page Assembler partagé", "composants partagés et extension isolée LISAA", "données locales"],
+      "restrictions": ["Proposition non officielle ; données limitées, à revalider avant diffusion."]
+    },
+    {
+      "id": "sop07-psb",
+      "title": "État courant — PSB",
+      "sop": "SOP 07B courant",
+      "status": "démonstration courante interactive",
+      "path": "sop-07-current/sites/psb/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-07-current/sites/psb/",
+      "dependencies": ["Page Assembler partagé", "composants partagés et extension isolée PSB", "données locales"],
+      "restrictions": ["Proposition non officielle ; chiffres/reconnaissances/événements rapportés par la source, à revalider avant diffusion."]
+    },
+    {
+      "id": "sop08-json-adapter",
+      "title": "SOP 08 — JSON → Adapter → ProgramCard",
+      "sop": "08",
+      "status": "démonstration courante interactive",
+      "path": "sop-08-json-adapter/",
+      "publicUrl": "https://chloechen-design.github.io/ai-website-factory-case-study/demos/sop-08-json-adapter/",
+      "dependencies": ["fixture JSON locale", "adaptateur local", "ProgramCard partagé de l’état SOP 07 courant"],
+      "restrictions": ["Reconstruction exécutable, pas composant figé à la date de SOP 08. Aucun vrai CMS ; état 404 simulé. Le contenu programme est une fixture de test."]
+    }
+  ]
+}

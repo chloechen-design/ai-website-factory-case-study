@@ -1,0 +1,39 @@
+/* Valeurs d'observation provisoires, pas des références de charte validées. */
+[data-brand="psb"] {
+  --brand-ink: #14213a;
+  --brand-ink-rgb: 20 33 58;
+  --brand-paper: #f4f6fa;
+  --brand-white: #ffffff;
+  --brand-accent: #dc1765;
+  --brand-muted: #586275;
+  --brand-line: #cbd2df;
+  --brand-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --brand-weight-heavy: 800;
+  --brand-tracking: -0.035em;
+  --brand-label-tracking: 0.055em;
+}
+
+.psb-campus-context { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 0.7fr); align-items: stretch; gap: 2rem; background: var(--color-ink); color: var(--color-on-ink); }
+.psb-campus-context__copy { max-width: 55rem; }
+.psb-campus-context__label { margin: 0 0 1rem; color: var(--color-accent); font-size: var(--type-caption); font-weight: 700; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.psb-campus-context h2 { max-width: 12ch; margin: 0 0 1rem; font-family: var(--font-display); font-size: var(--type-section); letter-spacing: var(--tracking-display); line-height: 0.92; text-transform: uppercase; }
+.psb-campus-context__copy > p:not(.psb-campus-context__label) { max-width: 52ch; color: var(--color-copy-on-dark); }
+.psb-campus-context__copy a { color: var(--color-accent); font-weight: 700; text-underline-offset: 0.3em; }
+.psb-campus-context__aside { display: flex; min-height: 16rem; flex-direction: column; justify-content: space-between; padding: 1.4rem; border: 1px solid var(--color-rule-on-dark); }
+.psb-campus-context__aside span { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+.psb-campus-context__aside small { max-width: 32ch; color: var(--color-copy-on-dark); font-size: var(--type-caption); }
+.psb-recognition-panel { background: var(--color-paper); }
+.psb-recognition-panel .section-heading { grid-template-columns: 1fr; align-items: start; gap: 1rem; }
+.psb-recognition-panel__items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); width: min(100%, var(--content-width)); margin-inline: auto; }
+.psb-recognition-item { display: flex; min-height: 15rem; flex-direction: column; justify-content: space-between; padding: clamp(1.3rem, 3vw, 2.6rem); border: 1px solid var(--color-rule); }
+.psb-recognition-item p { margin: 0 0 1rem; color: var(--color-muted); font-size: var(--type-caption); font-weight: 700; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.psb-recognition-item h3 { margin: 0 0 0.8rem; color: var(--color-ink); font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 5rem); letter-spacing: -0.06em; line-height: 0.9; }
+.psb-recognition-item span { display: block; max-width: 42ch; color: var(--color-muted); font-size: var(--type-small); }
+.psb-recognition-item > a { align-self: flex-start; margin-top: 1.5rem; color: var(--color-ink); font-size: var(--type-small); font-weight: 700; text-underline-offset: 0.3em; }
+.psb-recognition-panel .source-note { margin-top: 1rem; }
+@media (max-width: 760px) {
+  .psb-campus-context { grid-template-columns: 1fr; }
+  .psb-campus-context__aside { min-height: 11rem; }
+  .psb-recognition-panel__items { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Une expérimentation indépendante de Product Design pour comprendre comment une base web commune peut servir plusieurs écoles, avec et sans IA." />
+    <meta name="theme-color" content="#f6f8fb" />
+    <title>AI Website Factory - Chloé Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./case-study.css?v=4" />
+    <link rel="stylesheet" href="./case-study-evidence.css?v=3" />
+    <link rel="stylesheet" href="./case-study-deck.css?v=42" />
+    <script type="module" src="./case-study.js?v=14"></script>
+  </head>
+  <body class="gcase-page">
+    <a class="gcase-skip" href="#scene-01">Aller au récit</a>
+    <header class="story-topbar">
+      <a class="story-brand" href="../work.html"><span class="brand-mark">CC</span><span>Chloé Chen <small>· AI Website Factory</small></span></a>
+      <div class="story-tools">
+        <button class="plain-button" id="contents-toggle" type="button" aria-expanded="false" aria-controls="contents-panel">Sommaire</button>
+        <a class="library-shortcut" href="#scene-16" data-go="15">Voir la bibliothèque <span aria-hidden="true">↗</span></a>
+        <a class="portfolio-link" href="../work.html">Work</a>
+      </div>
+      <nav class="contents-panel" id="contents-panel" aria-label="Sommaire des chapitres" hidden>
+        <a href="#scene-01" data-go="0"><span>01-03</span> Une question de départ</a>
+        <a href="#scene-04" data-go="3"><span>04-10</span> Un premier site</a>
+        <a href="#scene-11" data-go="10"><span>11-16</span> Trois écoles, un système</a>
+        <a href="#scene-17" data-go="16"><span>17-19</span> Réutiliser ne suffit pas</a>
+        <a href="#scene-20" data-go="19"><span>20-22</span> Et dans la vraie vie ?</a>
+      </nav>
+    </header>
+
+    <main id="story" class="story-app" aria-label="Case study en 22 scènes">
+      <div class="story-progress" aria-live="polite">
+        <div class="progress-context"><span id="chapter-name">Le point de départ</span><span id="scene-scroll-hint" hidden>Défilement dans le panneau pour tout lire</span><span id="scene-count">01 / 22</span></div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+      </div>
+      <div class="scene-stage" id="scene-stage">
+        <section class="story-scene cover-scene" data-scene id="scene-01" data-chapter="Le point de départ" aria-labelledby="title-01" aria-roledescription="scène" tabindex="-1">
+          <div class="scene-copy cover-copy">
+            <p class="scene-kicker cover-label">AI WEBSITE FACTORY · CASE STUDY</p>
+            <h1 id="title-01"><span>Une base commune.</span><span>Des identités différentes.</span></h1>
+            <p class="cover-subtitle">Comment créer un système de sites réutilisable, sans perdre l'identité de chaque école ?</p>
+            <p class="cover-keywords">Multi-brand · Design System · AI Workflow</p>
+            <p class="cover-context">Exploration personnelle · Penninghen / LISAA / PSB</p>
+          </div>
+          <div class="scene-proof cover-visual" role="group" aria-label="Un Design System partagé décliné pour Penninghen, LISAA et PSB">
+            <div class="cover-system">Design System partagé</div>
+            <div class="cover-schools">
+              <article><a class="cover-school-card" href="./demos/sop-06c-captures/Penninghen-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture authentique du prototype Penninghen"><img src="./demos/sop-06c-captures/Penninghen-Full.png" alt="Aperçu de la capture historique du prototype Penninghen, SOP 06C" fetchpriority="high"><span>Penninghen</span></a></article>
+              <article><a class="cover-school-card" href="./demos/sop-06c-captures/LISAA-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture authentique du prototype LISAA"><img src="./demos/sop-06c-captures/LISAA-Full.png" alt="Aperçu de la capture historique du prototype LISAA, SOP 06C" fetchpriority="high"><span>LISAA</span></a></article>
+              <article><a class="cover-school-card" href="./demos/sop-06c-captures/PSB-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture authentique du prototype PSB"><img src="./demos/sop-06c-captures/PSB-Full.png" alt="Aperçu de la capture historique du prototype Paris School of Business, SOP 06C" fetchpriority="high"><span>PSB</span></a></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-scene workflow-scene" data-scene id="scene-02" data-chapter="Le point de départ" aria-labelledby="title-02" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="workflow-heading">
+            <p class="scene-kicker">02 / 22 · AI WORKFLOW</p>
+            <h2 id="title-02">L’IA produit. Je décide.</h2>
+            <p class="workflow-thesis">L’IA m’aide à explorer et à produire. Je garde la responsabilité des décisions de design.</p>
+          </header>
+          <div class="workflow-panel">
+            <div class="workflow-roles">
+              <section class="workflow-role workflow-role--ai" aria-labelledby="workflow-ai-title">
+                <h3 id="workflow-ai-title"><span class="workflow-icon workflow-icon--ai" aria-hidden="true"></span>IA · Codex</h3>
+                <ul>
+                  <li>Recherche &amp; benchmark</li>
+                  <li>Prototypes &amp; composants</li>
+                  <li>Code &amp; tests</li>
+                  <li>Audits techniques</li>
+                </ul>
+              </section>
+              <section class="workflow-role workflow-role--human" aria-labelledby="workflow-human-title">
+                <h3 id="workflow-human-title"><span class="workflow-icon workflow-icon--human" aria-hidden="true"></span>Moi · Product Designer</h3>
+                <ul>
+                  <li>Objectifs &amp; périmètre</li>
+                  <li>Choix de design</li>
+                  <li>Qualité visuelle &amp; UX</li>
+                  <li>Validation &amp; priorités</li>
+                </ul>
+              </section>
+            </div>
+            <div class="workflow-iteration" aria-label="Un workflow itératif : proposer, évaluer, corriger, retester">
+              <p>Un workflow itératif :</p>
+              <ol>
+                <li>proposer</li><li aria-hidden="true">→</li>
+                <li>évaluer</li><li aria-hidden="true">→</li>
+                <li>corriger</li><li aria-hidden="true">→</li>
+                <li>retester</li>
+              </ol>
+              <span class="workflow-return" aria-hidden="true">↶</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-scene scene--prototype-trio" data-scene id="scene-03" data-chapter="Le point de départ" aria-labelledby="title-03" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="prototype-intro">
+            <p class="prototype-eyebrow">03 / 22 · CHOIX DES ÉCOLES</p>
+            <h2 id="title-03">Deux écoles de design. Une école de commerce.</h2>
+            <p>Tester les points communs, les différences et les limites de réutilisation.</p>
+          </header>
+          <div class="prototype-gallery" aria-label="Captures des trois prototypes exploratoires">
+            <article class="prototype-view">
+              <a href="./demos/sop-06c-captures/Penninghen-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture du prototype Penninghen dans un nouvel onglet">
+                <img src="./demos/sop-06c-captures/Penninghen-Full.png" alt="Capture pleine page de la page d’accueil du prototype exploratoire Penninghen" loading="lazy">
+              </a>
+              <div class="prototype-caption"><h3>Penninghen</h3><p>Création &amp; projets</p><span>Point de départ</span></div>
+            </article>
+            <article class="prototype-view">
+              <a href="./demos/sop-06c-captures/LISAA-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture du prototype LISAA dans un nouvel onglet">
+                <img src="./demos/sop-06c-captures/LISAA-Full.png" alt="Capture pleine page de la page d’accueil du prototype exploratoire LISAA" loading="lazy">
+              </a>
+              <div class="prototype-caption"><h3>LISAA</h3><p>Formations &amp; campus</p><span>Comparaison proche</span></div>
+            </article>
+            <article class="prototype-view">
+              <a href="./demos/sop-06c-captures/PSB-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture du prototype PSB dans un nouvel onglet">
+                <img src="./demos/sop-06c-captures/PSB-Full.png" alt="Capture pleine page de la page d’accueil du prototype exploratoire PSB" loading="lazy">
+              </a>
+              <div class="prototype-caption"><h3>PSB</h3><p>Programmes &amp; admissions</p><span>Comparaison différente</span></div>
+            </article>
+          </div>
+          <footer class="prototype-summary"><p>Même domaine <span>→</span> domaines différents <span>→</span> tester la réutilisation</p><small>Captures de prototypes exploratoires, non officiels.</small></footer>
+        </section>
+
+        <section class="story-scene scene--website-audit" data-scene id="scene-04" data-chapter="Un premier site" aria-labelledby="title-04" aria-roledescription="scène" tabindex="-1" hidden>
+          <figure class="audit-capture">
+            <a href="./penninghen-homepage-official-capture.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture complète de la homepage officielle de Penninghen">
+              <img src="./penninghen-homepage-official-capture.png" alt="Capture fournie de la page d’accueil officielle de Penninghen : navigation, campagne d’inscriptions, formations, actualités, agenda et pied de page." loading="lazy">
+            </a>
+            <figcaption>Capture de la homepage officielle · document fourni</figcaption>
+          </figure>
+          <div class="audit-copy">
+            <p class="scene-kicker">04 / 22 · WEBSITE AUDIT</p>
+            <h2 id="title-04">Penninghen — Comprendre avant de concevoir</h2>
+            <p class="audit-subtitle">Premier audit du site existant, assisté par l’IA.</p>
+            <div class="audit-analysis">
+              <p>Analyse</p>
+              <ul>
+                <li>Structure de la page</li>
+                <li>Composants récurrents</li>
+                <li>Identité visuelle</li>
+                <li>Parcours à explorer</li>
+              </ul>
+            </div>
+            <p class="audit-conclusion">Identifier les premières bases du Design System.</p>
+          </div>
+        </section>
+
+        <section class="story-scene scene--prototype-steps" data-scene id="scene-05" data-chapter="Un premier site" aria-labelledby="title-05" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="prototype-steps__intro">
+            <p class="scene-kicker">05 / 22 · PREMIER PROTOTYPE</p>
+            <h2 id="title-05">Du site existant au premier prototype</h2>
+            <p class="prototype-steps__subtitle">Construire une première base de composants avec l’IA.</p>
+            <aside class="prototype-question" aria-label="Question que je me posais à cette étape">
+              <span class="prototype-question__emoji" aria-hidden="true">🤔</span>
+              <div>
+                <span class="prototype-question__label">MA QUESTION</span>
+                <p>« Comment créer un premier Design System à partir de ce site ? »</p>
+              </div>
+            </aside>
+          </header>
+          <div class="prototype-steps__grid" aria-label="Trois preuves de la progression vers la première homepage">
+            <article class="prototype-step">
+              <a class="prototype-step__visual" href="./evidence/scene-05/01-audit-penninghen.png" target="_blank" rel="noreferrer" aria-label="Ouvrir l’extrait du document d’analyse SOP 02">
+                <img src="./evidence/scene-05/01-audit-penninghen.png" alt="Extrait réel de l’analyse SOP 02 : structure de page, identité observée et éléments à confirmer." loading="lazy">
+              </a>
+              <div class="prototype-step__caption"><span>01 · Analyser</span><h3>Audit Penninghen</h3><p>Structure, contenu, identité</p><small>Extrait du document SOP 02</small></div>
+            </article>
+            <article class="prototype-step">
+              <a class="prototype-step__visual" href="./evidence/scene-05/02-foundations-components-v1.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture des premiers composants visibles dans Penninghen V1">
+                <img src="./evidence/scene-05/02-foundations-components-v1.png" alt="Capture de la section Formations de Penninghen V1 montrant les premières cartes de composants." loading="lazy">
+              </a>
+              <div class="prototype-step__caption"><span>02 · Construire</span><h3>Fondations &amp; composants</h3><p>Premiers composants visibles dans la V1</p><small>La page Foundations autonome n’a pas été retrouvée</small></div>
+            </article>
+            <article class="prototype-step">
+              <a class="prototype-step__visual" href="./evidence/scene-05/03-penninghen-homepage-v1.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture de la homepage interactive Penninghen V1">
+                <img src="./evidence/scene-05/03-penninghen-homepage-v1.png" alt="Capture de la homepage Penninghen V1, prototype indépendant et non officiel." loading="lazy">
+              </a>
+              <div class="prototype-step__caption"><span>03 · Assembler</span><h3>Penninghen V1</h3><p>Première homepage interactive</p><small><a href="./demos/penninghen/v1/" target="_blank" rel="noreferrer">Ouvrir la V1 ↗</a></small></div>
+            </article>
+          </div>
+          <footer class="prototype-steps__outcome">
+            <div class="prototype-steps__roles"><span>IA · Analyse &amp; génération</span><span>Designer · Choix &amp; validation</span></div>
+            <p>Premier résultat : une V1 à tester, pas un système finalisé.</p>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--demo" data-scene id="scene-06" data-chapter="Un premier site" aria-labelledby="title-06" aria-roledescription="scène" tabindex="-1" hidden>
+          <div class="scene-copy"><p class="scene-kicker">Penninghen V1</p><h2 id="title-06">J’ai produit une première page à faire relire.</h2><p>La V1 est un vrai prototype HTML. Tu peux la faire défiler ici ou l’ouvrir seule.</p><a class="open-demo" href="./demos/penninghen/v1/" target="_blank" rel="noreferrer">Explorer la V1 <span aria-hidden="true">↗</span></a><p class="scene-transition">En la regardant comme une expérience, j’ai repéré ce qui manquait.</p></div>
+          <div class="scene-proof browser-proof"><div class="browser-bar"><span></span><span></span><span></span><b>Penninghen · V1 interactive</b></div><iframe data-src="./demos/penninghen/v1/" title="Prototype interactif Penninghen V1" loading="lazy"></iframe><p class="frame-hint">Défilement indépendant dans la page intégrée · lien plein écran disponible à gauche</p></div>
+        </section>
+
+        <section class="story-scene scene--v1-review" data-scene id="scene-07" data-chapter="Un premier site" aria-labelledby="title-07" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="v1-review__intro">
+            <div class="v1-review__heading">
+              <p class="scene-kicker">07 / 22 · DESIGN REVIEW — V1</p>
+              <h2 id="title-07">Une V1 fonctionnelle, mais trop limitée.</h2>
+              <p class="v1-review__subtitle">Le problème venait aussi du manque de diversité des composants.</p>
+            </div>
+            <p class="v1-review__question"><span aria-hidden="true">🤔</span> « Pourquoi tous les blocs se ressemblent ? »</p>
+          </header>
+          <div class="v1-review__body">
+            <aside class="v1-review__analysis">
+              <ol class="v1-review__findings" aria-label="Constats de la revue de design">
+                <li><span>01</span><b>Peu de variantes</b></li>
+                <li><span>02</span><b>Blocs répétitifs</b></li>
+                <li><span>03</span><b>Peu de visuels</b></li>
+                <li><span>04</span><b>Rythme monotone</b></li>
+              </ol>
+              <p class="v1-review__decision"><b>Décision :</b> enrichir les composants, varier les layouts et intégrer des médias pertinents.</p>
+            </aside>
+            <figure class="v1-review__capture">
+            <div class="v1-review__browser-bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><b>Penninghen V1 · page interactive historique</b></div>
+            <div class="v1-review__image-wrap">
+              <iframe data-src="./demos/penninghen/v1/" data-focus-selector=".formation-grid" data-preview-hide=".metrics-section" title="Page historique Penninghen V1, cartes de formations avec défilement indépendant" loading="lazy"></iframe>
+            </div>
+            </figure>
+          </div>
+        </section>
+
+        <section class="story-scene scene--iteration" data-scene id="scene-08" data-chapter="Un premier site" aria-labelledby="title-08" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="iteration-intro">
+            <div class="iteration-heading">
+              <p class="scene-kicker">08 / 22 · DESIGN REVIEW &amp; ITERATION</p>
+              <h2 id="title-08">Identifier les manques avant de corriger</h2>
+              <p>De la revue de la V1 à des corrections de design plus précises.</p>
+            </div>
+            <p class="iteration-question"><span aria-hidden="true">🤔</span> « Quels composants manquent ? »</p>
+          </header>
+
+          <div class="iteration-comparison" aria-label="Comparaison de deux prototypes HTML interactifs">
+            <article class="iteration-version" aria-labelledby="iteration-v1-title">
+              <h3 id="iteration-v1-title">V1 · Avant</h3>
+              <div class="iteration-browser">
+                <div class="iteration-browser__bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><b>Penninghen · V1 historique</b><a href="./demos/penninghen/v1/" target="_blank" rel="noreferrer">Ouvrir ↗</a></div>
+                <iframe data-src="./demos/penninghen/v1/" title="Homepage interactive historique Penninghen V1" loading="lazy"></iframe>
+              </div>
+            </article>
+            <article class="iteration-version" aria-labelledby="iteration-v2-title">
+              <h3 id="iteration-v2-title">V2 · Après</h3>
+              <div class="iteration-browser">
+                <div class="iteration-browser__bar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><b>Penninghen · V2 historique</b><a href="./demos/penninghen/v2-before-media/" target="_blank" rel="noreferrer">Ouvrir ↗</a></div>
+                <iframe data-src="./demos/penninghen/v2-before-media/" title="Homepage interactive historique Penninghen V2, version avant intégration média" loading="lazy"></iframe>
+              </div>
+            </article>
+          </div>
+
+          <footer class="iteration-review" aria-label="Synthèse des retours de conception après la V1">
+            <div class="iteration-review__heading"><h3>Design Review · Ce qui devait changer</h3><p>Retours de conception après la V1, pas un audit formel.</p></div>
+            <dl>
+              <div><dt>Composants</dt><dd>Variantes insuffisantes</dd></div>
+              <div><dt>Composition</dt><dd>Répétition des blocs</dd></div>
+              <div><dt>Contenus</dt><dd>Médias peu présents</dd></div>
+            </dl>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--media-iteration" data-scene id="scene-09" data-chapter="Un premier site" aria-labelledby="title-09" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="media-iteration-intro">
+            <div><p class="scene-kicker">09 / 22 · MEDIA ITERATION</p><h2 id="title-09">Des placeholders aux vrais visuels</h2><p>Tester les composants média avec des images d’illustration.</p></div>
+            <p class="iteration-question"><span aria-hidden="true">🤔</span> « Et maintenant, quelles images utiliser ? »</p>
+          </header>
+          <div class="media-iteration-compare" aria-label="Comparaison interactive des états média Penninghen">
+            <article class="media-iteration-version"><header><h3>V2 · Sans médias intégrés</h3><a href="./demos/penninghen/v2-before-media/" target="_blank" rel="noreferrer">Ouvrir ↗</a></header><div class="media-iteration-browser"><iframe data-src="./demos/penninghen/v2-before-media/" title="Penninghen V2 historique avec emplacements médias, sans images intégrées" loading="lazy"></iframe></div></article>
+            <article class="media-iteration-version"><header><h3>État courant SOP 07B · médias d’illustration</h3><a href="./demos/sop-07-current/sites/penninghen/" target="_blank" rel="noreferrer">Ouvrir ↗</a></header><div class="media-iteration-browser"><iframe data-src="./demos/sop-07-current/sites/penninghen/" title="État courant SOP 07B Penninghen avec photos Pexels d’illustration, non snapshot historique de la V2 média" loading="lazy"></iframe></div></article>
+          </div>
+          <p class="media-iteration-provenance">Aucun snapshot autonome « V2 avec médias » n’a été retrouvé. À droite : l’état courant après SOP 07B, pas une archive de l’itération média. Les photos Pexels illustrent des activités créatives ; elles ne représentent ni Penninghen ni ses étudiants.</p>
+          <footer class="media-iteration-findings"><div><b>Qualité d’image</b><span>Netteté selon la taille d’affichage</span></div><div><b>Direction artistique</b><span>Pertinence des visuels retenus</span></div><div><b>Sources</b><span>Provenance et droits à vérifier</span></div></footer>
+        </section>
+
+        <section class="story-scene scene--technical-audit" data-scene id="scene-10" data-chapter="Un premier site" aria-labelledby="title-10" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="technical-audit-intro">
+            <div><p class="scene-kicker">10 / 22 · DESIGN SYSTEM AUDIT · SOP 05</p><h2 id="title-10">Un Design System visuel… mais est-il solide ?</h2><p>Les rapports SOP05 ne figurent pas dans les archives retrouvées.</p></div>
+            <p class="iteration-question"><span aria-hidden="true">🤔</span> « Et techniquement, est-ce que ça tient la route ? »</p>
+          </header>
+          <div class="technical-audit-layout">
+            <article class="technical-audit-proof">
+              <h3>Preuve documentaire retrouvée</h3>
+              <div class="audit-available-report"><span>Preuve ultérieure réellement disponible · SOP 07A · 24 octobre 2026</span><strong>« Le fallback média du Hero prend trop de place quand aucune image n’est fournie. »</strong><p>Extrait authentique d’un audit ultérieur ; il ne remplace pas les preuves manquantes de SOP 05.</p><a href="./evidence/scene-10/07-component-quality-audit.html" target="_blank" rel="noreferrer">Lire le rapport complet SOP 07A ↗</a></div>
+            </article>
+            <section class="technical-audit-topics" aria-labelledby="audit-topics-title"><h3 id="audit-topics-title">Axes de contrôle demandés en SOP 05</h3><ul><li>Valeurs CSS en dur</li><li>Design Tokens et thèmes</li><li>Styles répétés</li><li>Accessibilité et états de focus</li></ul><p>Les rapports SOP 05 n’étant pas présents ici, ces axes ne sont pas présentés comme des résultats détaillés de l’audit.</p></section>
+          </div>
+          <ol class="technical-audit-flow" aria-label="Audit, corrections, nouvelle vérification"><li><b>Audit</b><span>SOP 05 · rapport non retrouvé</span></li><li aria-hidden="true">→</li><li><b>Corrections</b><span>Changements de code conservés</span></li><li aria-hidden="true">→</li><li><b>Nouvelle vérification</b><span>Clôture SOP 07B · avec réserves</span></li></ol>
+        </section>
+
+        <section class="story-scene scene--sop-06a" data-scene id="scene-11" data-chapter="Trois écoles, un système" aria-labelledby="title-11" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="multi-brand-intro">
+            <div>
+              <p class="scene-kicker">SOP 06A · ANALYSE MULTI-MARQUES</p>
+              <h2 id="title-11">Une base commune, des besoins différents.</h2>
+              <p>Comparer les besoins de deux écoles avec les composants déjà créés pour Penninghen.</p>
+            </div>
+            <p class="iteration-question"><span aria-hidden="true">🤔</span> « Est-ce que ma base fonctionne pour d'autres écoles ? »</p>
+          </header>
+
+          <div class="multi-brand-pair" aria-label="Comparaison des besoins observés chez LISAA et Paris School of Business">
+            <article class="multi-brand-profile multi-brand-profile--lisaa" aria-labelledby="lisaa-profile-title">
+              <header class="multi-brand-profile__masthead">
+                <div><p class="multi-brand-profile__eyebrow">ÉCOLE D’ART ET DE DESIGN</p><h3 id="lisaa-profile-title">LISAA</h3></div>
+                <a href="https://www.lisaa.com/fr" target="_blank" rel="noreferrer">Site officiel <span aria-hidden="true">↗</span></a>
+              </header>
+              <div class="multi-brand-profile__facts">
+                <p class="multi-brand-profile__label">FAIT · repères visibles sur l’accueil</p>
+                <ul aria-label="Éléments de navigation et de contenu observés"><li>Filières</li><li>Villes</li><li>Niveaux</li><li>Campus</li></ul>
+              </div>
+              <div class="multi-brand-profile__path">
+                <p class="multi-brand-profile__label">HYPOTHÈSE · parcours à tester</p>
+                <h4>Explorer les formations</h4>
+                <p>Les filtres et la navigation multi-campus sont des besoins de conception déduits du site, pas validés par des entretiens.</p>
+              </div>
+              <p class="multi-brand-profile__gap"><span>ÉCART DU POC PENNINGHEN</span>Filtres et navigation multi-campus</p>
+            </article>
+
+            <article class="multi-brand-profile multi-brand-profile--psb" aria-labelledby="psb-profile-title">
+              <header class="multi-brand-profile__masthead">
+                <div><p class="multi-brand-profile__eyebrow">ÉCOLE DE COMMERCE</p><h3 id="psb-profile-title">Paris School <span>of Business</span></h3></div>
+                <a href="https://www.psbedu.paris/fr" target="_blank" rel="noreferrer">Site officiel <span aria-hidden="true">↗</span></a>
+              </header>
+              <div class="multi-brand-profile__facts">
+                <p class="multi-brand-profile__label">FAIT · repères visibles sur l’accueil</p>
+                <ul aria-label="Éléments de navigation et de contenu observés"><li>Programmes</li><li>Admissions</li><li>Accréditations</li><li>Alumni</li></ul>
+              </div>
+              <div class="multi-brand-profile__path">
+                <p class="multi-brand-profile__label">HYPOTHÈSE · parcours à tester</p>
+                <h4>Choisir un programme et candidater</h4>
+                <p>Le parcours d’admission et les preuves de réassurance sont des pistes déduites de la hiérarchie éditoriale publique.</p>
+              </div>
+              <p class="multi-brand-profile__gap"><span>ÉCART DU POC PENNINGHEN</span>Parcours d’admission et réassurance</p>
+            </article>
+          </div>
+
+          <footer class="multi-brand-conclusion">
+            <p>Certains composants sont réutilisables. D'autres besoins demandent de nouvelles fonctionnalités.</p>
+            <small>Analyse de pages publiques uniquement · aucun entretien utilisateur · écarts relatifs au POC, pas aux sites officiels.</small>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--demo" data-scene id="scene-12" data-chapter="Trois écoles, un système" aria-labelledby="title-12" aria-roledescription="scène" tabindex="-1" hidden>
+          <div class="scene-copy"><p class="scene-kicker">12 · SOP 06B · Diagnostic</p><h2 id="title-12">J’ai rendu les capacités manquantes visibles.</h2><p>Les pages 06B affichent « C · Extension nécessaire » là où le système ne répondait pas encore au besoin.</p><p>Ce sont des placeholders de diagnostic, pas des fonctionnalités. Leur reconstruction est partielle et s’appuie sur le code partagé actuel.</p><div class="diagnostic-controls" role="group" aria-label="Choisir le diagnostic 06B"><button type="button" aria-pressed="true" data-switch="diagnostic" data-src="./demos/sop-06b/prototypes/06b/lisaa/" data-title="Diagnostic LISAA 06B, reconstruction partielle" data-open="diagnostic-open">LISAA</button><button type="button" aria-pressed="false" data-switch="diagnostic" data-src="./demos/sop-06b/prototypes/06b/psb/" data-title="Diagnostic PSB 06B, reconstruction partielle" data-open="diagnostic-open">PSB</button></div><a class="open-demo" id="diagnostic-open" href="./demos/sop-06b/prototypes/06b/lisaa/" target="_blank" rel="noreferrer">Ouvrir le diagnostic <span aria-hidden="true">↗</span></a><p class="scene-transition">Il fallait décider quels écarts méritaient une vraie extension.</p></div>
+          <div class="scene-proof browser-proof"><div class="browser-bar"><span></span><span></span><span></span><b>Diagnostic 06B · capacité manquante</b></div><iframe id="diagnostic-frame" data-src="./demos/sop-06b/prototypes/06b/lisaa/" title="Diagnostic LISAA 06B, reconstruction partielle" loading="lazy"></iframe><p class="frame-hint">Les placeholders C sont explicatifs. Ils ne simulent pas un filtre ou une fonctionnalité.</p></div>
+        </section>
+
+        <section class="story-scene scene--gap-inventory" data-scene id="scene-13" data-chapter="Trois écoles, un système" aria-labelledby="title-13" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="gap-inventory__header">
+            <div>
+              <p class="scene-kicker">13 / 22 · GAP INVENTORY</p>
+              <h2 id="title-13">Tous les gaps ne demandent pas un nouveau composant.</h2>
+              <p class="gap-inventory__subtitle">Regrouper les besoins avant de décider quoi réutiliser, adapter ou développer.</p>
+            </div>
+            <p class="gap-inventory__question"><span aria-hidden="true">🤔</span> « Faut-il créer un composant pour chaque gap ? »</p>
+          </header>
+
+          <div class="gap-decisions" aria-label="Les trois décisions du diagnostic SOP 06B">
+            <article class="gap-decision gap-decision--reuse">
+              <p class="gap-decision__code">A</p>
+              <h3>Réutiliser</h3>
+              <p>Le composant existe déjà et répond au besoin.</p>
+              <p class="gap-decision__example"><span>Exemple documenté</span>SectionHeading pour les titres et introductions simples.</p>
+            </article>
+            <article class="gap-decision gap-decision--configure">
+              <p class="gap-decision__code">B</p>
+              <h3>Adapter</h3>
+              <p>Le contenu, le thème ou les données suffisent à l’ajuster.</p>
+              <p class="gap-decision__example"><span>Exemple documenté</span>Agenda statique avec ses événements et son thème configurés.</p>
+            </article>
+            <article class="gap-decision gap-decision--extend">
+              <p class="gap-decision__code">C</p>
+              <h3>Développer</h3>
+              <p>Une capacité manque ; elle n’est pas encore développée.</p>
+              <p class="gap-decision__example"><span>Exemple documenté</span>Répertoire de campus et sélecteur de ville pour LISAA.</p>
+            </article>
+          </div>
+
+          <div class="gap-examples">
+            <h3>Trois besoins, trois lectures</h3>
+            <div class="gap-examples__list">
+              <article><span class="gap-examples__tag">A · Réutiliser</span><strong>Titres et introductions</strong><p>SectionHeading est déjà présent dans le système partagé.</p><small>Plusieurs écoles · besoin éditorial simple</small></article>
+              <article><span class="gap-examples__tag">C · Extension nécessaire</span><strong>Navigation multi-campus</strong><p>LISAA · relier villes, écoles et filières ; aucun composant existant.</p><small>Proposé : répertoire de campus et sélecteur de ville</small></article>
+              <article><span class="gap-examples__tag">C · Extension nécessaire</span><strong>Parcours d’admission</strong><p>PSB · adapter le parcours aux voies propres à chaque programme.</p><small>À alimenter par des règles vérifiées et datées</small></article>
+            </div>
+          </div>
+
+          <footer class="gap-inventory__footer">
+            <p><strong>À cette étape, C signifie « capacité manquante ».</strong> Core / Configurable / Brand-specific est une classification architecturale distincte, présentée plus loin.</p>
+            <a href="./evidence/scene-13/06b-gap-matrix.md" target="_blank" rel="noreferrer">Ouvrir la Gap Matrix SOP 06B <span aria-hidden="true">↗</span></a>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--component-architecture" data-scene id="scene-14" data-chapter="Trois écoles, un système" aria-labelledby="title-14" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="component-architecture__header">
+            <div>
+              <p class="scene-kicker">SOP 06C · COMPONENT ARCHITECTURE</p>
+              <h2 id="title-14">Un socle commun, sans tout uniformiser.</h2>
+              <p>Trois niveaux de composants pour garder la flexibilité des marques.</p>
+            </div>
+            <p class="scene-question" aria-label="Question personnelle">🤔 « Qu'est-ce qu'on partage vraiment ? »</p>
+          </header>
+
+          <div class="component-architecture__columns" aria-label="Trois niveaux de composants">
+            <section class="component-tier" aria-labelledby="tier-core-title">
+              <header class="component-tier__heading"><span>A · CORE</span><h3 id="tier-core-title">Partager</h3></header>
+              <p class="component-tier__summary">Même structure pour les trois écoles.</p>
+              <div class="component-example"><div class="component-example__label"><strong>Button</strong><span>Développé</span></div><iframe data-component-preview="Button" data-brand="shared" title="Aperçu réel du composant partagé Button" loading="lazy"></iframe></div>
+              <div class="component-example"><div class="component-example__label"><strong>SectionHeading</strong><span>Développé</span></div><iframe data-component-preview="SectionHeading" data-brand="shared" title="Aperçu réel du composant partagé SectionHeading" loading="lazy"></iframe></div>
+            </section>
+
+            <section class="component-tier" aria-labelledby="tier-configurable-title">
+              <header class="component-tier__heading"><span>B · CONFIGURABLE</span><h3 id="tier-configurable-title">Adapter</h3></header>
+              <p class="component-tier__summary">Même composant, thème et contenu de marque.</p>
+              <div class="component-example"><div class="component-example__label"><strong>Hero · Penninghen</strong><span>Configuration 1</span></div><iframe data-component-preview="Hero" data-brand="penninghen" data-variant="source" title="Composant Hero configuré avec les données Penninghen" loading="lazy"></iframe></div>
+              <div class="component-example"><div class="component-example__label"><strong>Hero · LISAA</strong><span>Configuration 2</span></div><iframe data-component-preview="Hero" data-brand="lisaa" data-variant="source" title="Même composant Hero configuré avec le thème et les données LISAA" loading="lazy"></iframe></div>
+              <div class="component-example component-example--compact"><div class="component-example__label"><strong>ProgramCard · PSB</strong><span>Développé</span></div><iframe data-component-preview="ProgramCard" data-brand="psb" title="Composant réel ProgramCard configuré avec les données PSB" loading="lazy"></iframe></div>
+            </section>
+
+            <section class="component-tier" aria-labelledby="tier-specific-title">
+              <header class="component-tier__heading"><span>C · BRAND-SPECIFIC</span><h3 id="tier-specific-title">Spécialiser</h3></header>
+              <p class="component-tier__summary">Pattern isolé quand le besoin diffère.</p>
+              <div class="component-example component-example--interactive"><div class="component-example__label"><strong>LISAA · Program Finder</strong><span>Échantillon · 5 fiches</span></div><iframe data-component-preview="LisaaProgramFinder" data-brand="lisaa" title="Composant LISAA Program Finder réel, avec un échantillon de cinq fiches et des filtres interactifs" loading="lazy"></iframe></div>
+              <div class="component-example"><div class="component-example__label"><strong>PSB · Recognition Panel</strong><span>Partiel</span></div><iframe data-component-preview="PsbRecognitionPanel" data-brand="psb" title="Composant PSB Recognition Panel réel, partiellement développé" loading="lazy"></iframe></div>
+              <p class="component-tier__caveat">Finder : pas de catalogue officiel connecté. Reconnaissances : statuts, dates et droits à confirmer.</p>
+            </section>
+          </div>
+          <p class="component-architecture__footnote">SOP 06B : C = capacité manquante. SOP 06C : C = composant Brand-specific.</p>
+        </section>
+
+        <section class="story-scene scene--shared-assembly" data-scene id="scene-15" data-chapter="Trois écoles, un système" aria-labelledby="title-15" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="shared-assembly__header">
+            <div>
+              <p class="scene-kicker">15 · ASSEMBLAGE MULTI-MARQUES</p>
+              <h2 id="title-15">Une bibliothèque commune. Trois sites différents.</h2>
+              <p>Chaque école choisit ses contenus, son identité et l'ordre des sections.</p>
+            </div>
+            <p class="shared-assembly__question" aria-label="Question personnelle">🤔 « Comment construire trois sites sans tout refaire ? »</p>
+          </header>
+
+          <div class="shared-assembly__inputs" aria-label="Éléments réunis pour construire une page">
+            <section class="shared-assembly__input shared-assembly__input--components" aria-labelledby="assembly-components-title">
+              <div class="shared-assembly__input-heading"><span class="shared-assembly__glyph" aria-hidden="true">▦</span><div><p>La bibliothèque</p><h3 id="assembly-components-title">Composants partagés</h3></div></div>
+              <ul class="shared-assembly__component-list" aria-label="Composants présents dans le registre commun">
+                <li>Hero</li><li>ProgramCard</li><li>Navigation <small>SiteHeader</small></li><li>Footer <small>SiteFooter</small></li>
+              </ul>
+            </section>
+            <section class="shared-assembly__input shared-assembly__input--configuration" aria-labelledby="assembly-config-title">
+              <div class="shared-assembly__input-heading"><span class="shared-assembly__glyph" aria-hidden="true">⌘</span><div><p>Les choix de l'école</p><h3 id="assembly-config-title">Configuration de marque</h3></div></div>
+              <ul class="shared-assembly__config-list">
+                <li>Couleurs et typographie</li><li>Contenus</li><li>Sélection des sections</li><li>Ordre des sections</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="shared-assembly__merge" aria-hidden="true"><span></span><b>↓</b><span></span></div>
+          <section class="shared-assembly__assembler" aria-label="Assemblage partagé">
+            <span class="shared-assembly__assembler-mark" aria-hidden="true">▧</span>
+            <div><p>Assemblage partagé</p><h3>Page Assembler</h3><span>Assemble automatiquement les composants selon la configuration choisie.</span></div>
+          </section>
+          <div class="shared-assembly__output-arrow" aria-hidden="true">↓</div>
+
+          <div class="shared-assembly__sites" aria-label="Trois sites produits avec le même assembleur">
+            <article class="shared-assembly__site shared-assembly__site--penninghen">
+              <header><h3>Penninghen</h3><a href="./demos/sop-07-current/sites/penninghen/" target="_blank" rel="noreferrer">Ouvrir le site <span aria-hidden="true">↗</span></a></header>
+              <div class="shared-assembly__viewport"><iframe data-src="./demos/sop-07-current/sites/penninghen/" title="Aperçu interactif du prototype Penninghen assemblé" loading="lazy"></iframe></div>
+            </article>
+            <article class="shared-assembly__site shared-assembly__site--lisaa">
+              <header><h3>LISAA</h3><a href="./demos/sop-07-current/sites/lisaa/" target="_blank" rel="noreferrer">Ouvrir le site <span aria-hidden="true">↗</span></a></header>
+              <div class="shared-assembly__viewport"><iframe data-src="./demos/sop-07-current/sites/lisaa/" title="Aperçu interactif du prototype LISAA assemblé" loading="lazy"></iframe></div>
+            </article>
+            <article class="shared-assembly__site shared-assembly__site--psb">
+              <header><h3>Paris School of Business</h3><a href="./demos/sop-07-current/sites/psb/" target="_blank" rel="noreferrer">Ouvrir le site <span aria-hidden="true">↗</span></a></header>
+              <div class="shared-assembly__viewport"><iframe data-src="./demos/sop-07-current/sites/psb/" title="Aperçu interactif du prototype Paris School of Business assemblé" loading="lazy"></iframe></div>
+            </article>
+          </div>
+          <details class="shared-assembly__technical"><summary>Voir la structure technique</summary><p><code>src/component-registry.js</code> → <code>src/page-assembler.js</code> · <code>brands/*/site.js</code> · données et thèmes de marque</p></details>
+        </section>
+
+        <section class="story-scene scene--library" data-scene id="scene-16" data-chapter="Trois écoles, un système" aria-labelledby="title-16" aria-roledescription="scène" tabindex="-1" hidden>
+          <div class="scene-copy"><p class="scene-kicker">16 · Le livrable central</p><h2 id="title-16">La bibliothèque rend le système consultable.</h2><p>Le cadre ouvre la vraie bibliothèque interactive : fondations, composants, thèmes de marque et pages assemblées.</p><p class="source-caveat">C’est l’état courant du prototype, pas une archive figée de SOP 06C ou de l’après-SOP 07.</p><a class="open-demo" href="./demos/sop-07-current/" target="_blank" rel="noreferrer">Ouvrir la bibliothèque en plein écran <span aria-hidden="true">↗</span></a></div>
+          <div class="scene-proof browser-proof browser-proof--large"><div class="browser-bar"><span></span><span></span><span></span><b>Visual Design System Library · état courant</b></div><iframe data-src="./demos/sop-07-current/" title="Bibliothèque interactive du Design System multi-marques, état courant" loading="lazy"></iframe><p class="frame-hint">La page intégrée garde son propre défilement et ses interactions.</p></div>
+        </section>
+
+        <section class="story-scene scene--demo" data-scene id="scene-17" data-chapter="Réutiliser ne suffit pas" aria-labelledby="title-17" aria-roledescription="scène" tabindex="-1" hidden>
+          <div class="scene-copy"><p class="scene-kicker">17 · Trois pages, même assembleur</p><h2 id="title-17">Les trois sites utilisent maintenant la même base.</h2><p>Choisis une école pour charger sa vraie route dans le cadre. Ce sont des prototypes de travail, pas les sites officiels des établissements.</p><div class="school-controls" role="group" aria-label="Choisir un prototype courant"><button type="button" aria-pressed="true" data-switch="schools" data-src="./demos/sop-07-current/sites/penninghen/" data-title="Prototype Penninghen actuel" data-open="school-open">Penninghen</button><button type="button" aria-pressed="false" data-switch="schools" data-src="./demos/sop-07-current/sites/lisaa/" data-title="Prototype LISAA actuel avec échantillon Finder" data-open="school-open">LISAA</button><button type="button" aria-pressed="false" data-switch="schools" data-src="./demos/sop-07-current/sites/psb/" data-title="Prototype PSB actuel" data-open="school-open">PSB</button></div><a class="open-demo" id="school-open" href="./demos/sop-07-current/sites/penninghen/" target="_blank" rel="noreferrer">Ouvrir le site sélectionné <span aria-hidden="true">↗</span></a><p class="scene-transition">Le partage était réel. Mais cela ne voulait pas encore dire que le résultat était bon.</p></div>
+          <div class="scene-proof browser-proof"><div class="browser-bar"><span></span><span></span><span></span><b>Pages assemblées · code courant</b></div><iframe id="school-frame" data-src="./demos/sop-07-current/sites/penninghen/" title="Prototype Penninghen actuel" loading="lazy"></iframe><p class="frame-hint">Le contenu de chaque marque est exploratoire et certaines données sont des échantillons.</p></div>
+        </section>
+
+        <section class="story-scene scene--quality-audit" data-scene id="scene-18" data-chapter="Réutiliser ne suffit pas" aria-labelledby="title-18" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="quality-audit__header">
+            <div>
+              <p class="scene-kicker">18 / 22 · SOP 07A · QUALITY AUDIT</p>
+              <h2 id="title-18">Même système. Les mêmes problèmes se répètent.</h2>
+              <p>Les trois sites fonctionnaient, mais la qualité UX/UI n'était pas encore suffisante.</p>
+            </div>
+            <p class="quality-audit__question" aria-label="Question personnelle">🤔 « Et si on réutilisait aussi les défauts ? »</p>
+          </header>
+
+          <div class="quality-audit__cases" aria-label="Trois problèmes relevés pendant l’audit SOP 07A">
+            <article class="quality-audit__case quality-audit__case--lisaa">
+              <header><span>Cas 01 · LISAA</span><a href="./demos/sop-06c-captures/LISAA-Full.png" target="_blank" rel="noreferrer">Capture complète ↗</a></header>
+              <a class="quality-audit__visual quality-audit__visual--capture" href="./demos/sop-06c-captures/LISAA-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture historique complète de LISAA, référence avant SOP 07">
+                <img src="./demos/sop-06c-captures/LISAA-Full.png" alt="Capture pleine page historique LISAA avant les corrections : grand placeholder orange de média absent dans le Hero." loading="lazy" />
+                <span>Détail recadré · référence avant (SOP 06C)</span>
+              </a>
+              <div class="quality-audit__caption"><h3>Hero sans média</h3><p>Un grand emplacement vide dominait la page.</p></div>
+            </article>
+
+            <article class="quality-audit__case quality-audit__case--psb">
+              <header><span>Cas 02 · PSB</span><a href="./demos/sop-06c-captures/PSB-Full.png" target="_blank" rel="noreferrer">Capture complète ↗</a></header>
+              <a class="quality-audit__visual quality-audit__visual--capture" href="./demos/sop-06c-captures/PSB-Full.png" target="_blank" rel="noreferrer" aria-label="Ouvrir la capture historique complète de PSB, référence avant SOP 07">
+                <img src="./demos/sop-06c-captures/PSB-Full.png" alt="Capture pleine page historique PSB avant les corrections : le placeholder média se superpose au titre du Hero." loading="lazy" />
+                <span>Détail recadré · référence avant (SOP 06C)</span>
+              </a>
+              <div class="quality-audit__caption"><h3>Texte superposé</h3><p>Un placeholder média se superposait au titre.</p></div>
+            </article>
+
+            <article class="quality-audit__case quality-audit__case--link">
+              <header><span>Cas 03 · PSB</span><span class="quality-audit__source-tag">Preuve code</span></header>
+              <div class="quality-audit__visual quality-audit__visual--code" aria-label="Extrait exact des données du prototype PSB">
+                <span class="quality-audit__code-label">SOP-07-Baseline / data/psb-homepage.js</span>
+                <pre><code>const officialHome = "https://www.psbedu.paris/fr";
+
+{ label: "Brochure", href: officialHome },</code></pre>
+                <span class="quality-audit__code-note">Extrait des données avant correction</span>
+              </div>
+              <div class="quality-audit__caption"><h3>Mauvaise destination</h3><p>Le bouton « Brochure » renvoyait à l'accueil.</p></div>
+            </article>
+          </div>
+
+          <footer class="quality-audit__conclusion">
+            <p>Réutiliser les composants ne suffit pas. Il faut aussi vérifier leur qualité sur chaque site.</p>
+            <div class="quality-audit__links"><a href="./demos/sop-07-before/" target="_blank" rel="noreferrer">Consulter les preuves de l’audit <span aria-hidden="true">↗</span></a><a href="./evidence/scene-10/07-component-quality-audit.html" target="_blank" rel="noreferrer">Lire le rapport SOP 07A <span aria-hidden="true">↗</span></a></div>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--sop07b" data-scene id="scene-19" data-chapter="Réutiliser ne suffit pas" aria-labelledby="title-19" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="sop07b__header">
+            <div><p class="scene-kicker">SOP 07B · CORRECTIONS &amp; VALIDATION</p><h2 id="title-19">Corriger les défauts, puis tester le résultat.</h2></div>
+            <p class="sop07b__question"><span aria-hidden="true">🤔</span> « Est-ce que les corrections fonctionnent vraiment ? »</p>
+          </header>
+          <aside class="sop07b__summary" aria-label="Corrections et vérification documentée">
+            <section><h3>Ce qui a été corrigé</h3><ul><li>Affichage des médias et des composants</li><li>Liens et destinations</li><li>Filtrage des formations LISAA</li></ul></section>
+            <section class="sop07b__checks"><h3>Vérification documentée</h3><div><strong>12/12</strong><span>tests Node</span></div><div><strong>15/15</strong><span>contrôles navigateur</span></div><p>Résultats du rapport de clôture, non relancés pour cette refonte.</p></section>
+          </aside>
+          <section class="sop07b__demo" aria-label="Démonstration interactive du LISAA Program Finder">
+            <header><h3>LISAA · Program Finder</h3><a href="./demos/sop-07-current/sites/lisaa/#catalogue-lisaa" target="_blank" rel="noreferrer">Ouvrir la page entière ↗</a></header>
+            <div class="sop07b__viewport"><iframe data-src="./demos/sop-07-current/sites/lisaa/" data-focus-selector="#lisaa-filter-family" data-preview-hide="header.site-header" title="Véritable page LISAA, positionnée sur les filtres interactifs du Programme Finder" loading="lazy"></iframe></div>
+            <p class="sop07b__limit">Finder démonstratif : 5 fiches, pas de catalogue complet ni d’intégration CMS.</p>
+          </section>
+        </section>
+
+        <section class="story-scene scene--production-summary" data-scene id="scene-20" data-chapter="Et dans la vraie vie ?" aria-labelledby="title-21" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="production-summary__header">
+            <div><p class="scene-kicker">SOP 08 · PASSAGE EN PRODUCTION</p><h2 id="title-21">Créer les sites, c'est une chose. Les faire vivre, c'en est une autre.</h2></div>
+            <p class="production-summary__question"><span aria-hidden="true">🤔</span> « Et après la mise en ligne ? »</p>
+          </header>
+          <div class="production-summary__columns">
+            <section aria-labelledby="production-tested-title"><span class="production-summary__index">01</span><h3 id="production-tested-title">Ce que j'ai testé</h3><ul><li>3 marques</li><li>Composants partagés</li><li>Assemblage des pages</li></ul></section>
+            <section aria-labelledby="production-build-title"><span class="production-summary__index">02</span><h3 id="production-build-title">Ce qui reste à construire</h3><ul><li>CMS et gestion des contenus</li><li>Droits et validations</li><li>Déploiement et versions</li></ul></section>
+            <section aria-labelledby="production-team-title"><span class="production-summary__index">03</span><h3 id="production-team-title">Ce que je demanderais à l'équipe</h3><ul><li>Quel CMS existe déjà ?</li><li>Qui valide les contenus ?</li><li>Quelle autonomie pour chaque école ?</li></ul></section>
+          </div>
+          <p class="production-summary__note">POC exploratoire indépendant ; je ne connais pas l’architecture interne de Galileo.</p>
+        </section>
+
+        <section class="story-scene scene--benchmark-summary" data-scene id="scene-21" data-chapter="Et dans la vraie vie ?" aria-labelledby="title-22" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="benchmark-summary__header">
+            <div><p class="scene-kicker">SOP 08 · BENCHMARK TECHNIQUE</p><h2 id="title-22">Trois pistes pour passer à l'échelle.</h2><p>Une exploration, pas un choix technique pour Galileo.</p></div>
+            <p class="benchmark-summary__question"><span aria-hidden="true">🤔</span> « Comment passer du prototype à un vrai système ? »</p>
+          </header>
+          <div class="benchmark-summary__options">
+            <article><header><span>A</span><h3>CMS + Frontend partagé</h3></header><p>Un CMS pour les contenus, des composants communs pour les sites.</p><p class="benchmark-summary__examples">Exemples : <a href="https://www.storyblok.com/docs/manuals/visual-editor.html" target="_blank" rel="noreferrer">Storyblok</a>, <a href="https://www.sanity.io/docs/studio/schemas-and-forms" target="_blank" rel="noreferrer">Sanity</a>.</p></article>
+            <article><header><span>B</span><h3>Plateforme de sites</h3></header><p>Créer et gérer visuellement plusieurs sites.</p><p class="benchmark-summary__examples">Exemple : <a href="https://help.webflow.com/hc/en-us/articles/33961343551763-Libraries" target="_blank" rel="noreferrer">Webflow</a>.</p></article>
+            <article><header><span>C</span><h3>Intégration progressive</h3></header><p>Garder les outils existants et faire évoluer le système par étapes.</p><p class="benchmark-summary__examples">À définir avec l'équipe.</p></article>
+          </div>
+          <footer class="benchmark-summary__footer">
+            <p>Avant de choisir, il faudrait connaître le CMS existant, les droits éditoriaux et les contraintes techniques du groupe.</p>
+            <details class="benchmark-summary__sources"><summary>Sources documentaires</summary><div><a href="https://www.storyblok.com/docs/manuals/visual-editor.html" target="_blank" rel="noreferrer">Storyblok · Visual Editor</a><a href="https://www.sanity.io/docs/studio/schemas-and-forms" target="_blank" rel="noreferrer">Sanity · Schemas and Forms</a><a href="https://help.webflow.com/hc/en-us/articles/33961343551763-Libraries" target="_blank" rel="noreferrer">Webflow · Libraries</a><a href="https://vercel.com/docs/instant-rollback" target="_blank" rel="noreferrer">Déploiement possible · Vercel</a></div></details>
+          </footer>
+        </section>
+
+        <section class="story-scene scene--ending ending-scene" data-scene id="scene-22" data-chapter="Et dans la vraie vie ?" aria-labelledby="title-23" aria-roledescription="scène" tabindex="-1" hidden>
+          <header class="ending-scene__header">
+            <div><p class="scene-kicker">DERNIER TEST &amp; BILAN</p><h2 id="title-23">Ce que ce POC m'a appris.</h2><p>De la première page à un système multi-marques, avec l'IA à chaque étape.</p></div>
+            <p class="ending-scene__question"><span aria-hidden="true">🤔</span> « Jusqu'où peut-on aller avec l'IA ? »</p>
+          </header>
+          <section class="ending-scene__demo" aria-labelledby="ending-demo-title">
+            <div class="ending-scene__demo-heading"><h3 id="ending-demo-title">Contenu et composant</h3><div class="adapter-controls" role="group" aria-label="Choisir un état de données"><button type="button" aria-pressed="true" data-switch="adapter" data-src="./demos/sop-08-json-adapter/" data-title="Démonstration, données valides" data-open="adapter-open">Données valides</button><button type="button" aria-pressed="false" data-switch="adapter" data-src="./demos/sop-08-json-adapter/?source=missing" data-title="Démonstration, donnée manquante" data-open="adapter-open">Donnée manquante</button></div></div>
+            <div class="scene-proof browser-proof"><div class="browser-bar"><span></span><span></span><span></span><b>JSON → Adapter → ProgramCard</b></div><iframe id="adapter-frame" data-src="./demos/sop-08-json-adapter/" title="Test interactif du composant ProgramCard avec des données valides" loading="lazy"></iframe><p class="frame-hint">Le contenu peut changer sans modifier le composant. Test local, sans CMS.</p></div>
+            <a class="open-demo" id="adapter-open" href="./demos/sop-08-json-adapter/" target="_blank" rel="noreferrer">Ouvrir le test en plein écran <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="ending-scene__lessons" aria-labelledby="ending-lessons-title">
+            <h3 id="ending-lessons-title">Ce que je retiens</h3>
+            <ol>
+              <li><span>01</span><div><h4>L'IA accélère l'exploration</h4><p>Recherche, prototypes, code et audits.</p></div></li>
+              <li><span>02</span><div><h4>Le designer garde les décisions</h4><p>Qualité, pertinence et priorités.</p></div></li>
+              <li><span>03</span><div><h4>Un système réutilisable doit rester utile</h4><p>Partager des composants ne suffit pas.</p></div></li>
+            </ol>
+          </section>
+          <footer class="ending-scene__conclusion">Et maintenant, j'aimerais surtout comprendre comment vous abordez ces questions dans votre projet.</footer>
+        </section>
+      </div>
+
+      <footer class="story-controls" aria-label="Navigation du récit">
+        <button type="button" id="previous-scene" class="nav-step" aria-label="Scène précédente"><span aria-hidden="true">←</span> Précédent</button>
+        <div class="control-center"><span id="control-count">01 / 22</span><span class="key-hint">Flèches ← →</span></div>
+        <button type="button" id="next-scene" class="nav-step nav-step--next">Suivant <span aria-hidden="true">→</span></button>
+      </footer>
+    </main>
+    <p class="independent-disclaimer">Projet exploratoire indépendant, non commandé ni validé par Galileo Global Education ou les écoles citées.</p>
+  </body>
+</html>

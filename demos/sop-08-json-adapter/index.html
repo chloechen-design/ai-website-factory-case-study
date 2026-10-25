@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Démonstration locale de séparation entre données JSON, adaptateur et composant partagé." />
+    <title>SOP 08 — JSON → Adapter → ProgramCard</title>
+    <link rel="stylesheet" href="../sop-07-current/src/styles/tokens.css" />
+    <link rel="stylesheet" href="../sop-07-current/brands/lisaa/theme.css" />
+    <link rel="stylesheet" href="../sop-07-current/src/styles/base.css" />
+    <style>
+      body { margin: 0; padding: 2rem; background: var(--color-page); color: var(--color-ink); font-family: var(--font-body); }
+      main { width: min(100%, 54rem); margin-inline: auto; }
+      .test-note { padding: 1rem; border: 1px solid var(--color-rule); background: var(--color-paper); }
+      #result { display: grid; gap: 1rem; margin-top: 2rem; }
+      #status { min-height: 1.5em; }
+      #status[role="alert"] { color: #a21d27; font-weight: 700; }
+      .formation-card { min-height: 0; padding: 1.25rem; border: 1px solid var(--color-rule); }
+      .demo-nav { display:flex;flex-wrap:wrap;gap:.75rem;margin-block:1.5rem }
+      .demo-nav a { color:inherit;text-underline-offset:.18em }
+      .demo-nav a:focus-visible { outline:3px solid #1849a9;outline-offset:4px }
+      @media(max-width:600px) { body { padding:1rem } }
+    </style>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <p class="editorial-category">SOP 08 · expérience de faisabilité</p>
+      <h1>Contrat de données pour une fiche programme</h1>
+      <p class="test-note">Démonstration autonome de la copie de préparation : JSON local → adaptateur → vrai <code>ProgramCard</code> partagé de l’état courant SOP 07. Elle ne se connecte ni à LISAA ni à un CMS et n’est pas un snapshot historique autonome du composant SOP 08.</p>
+      <nav class="demo-nav" aria-label="États de démonstration">
+        <a href="./">État JSON valide</a>
+        <a href="?source=missing">État d’erreur 404 simulé</a>
+      </nav>
+      <p id="status" role="status" aria-live="polite">Chargement…</p>
+      <section id="result" aria-label="Fiches programme de démonstration"></section>
+    </main>
+  </body>
+</html>

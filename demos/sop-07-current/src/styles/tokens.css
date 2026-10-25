@@ -1,0 +1,60 @@
+/* Tokens communs : rôles d'interface, échelles et comportements partagés. */
+:root {
+  color-scheme: light;
+
+  /* Rôles sémantiques alimentés par les valeurs de la marque active. */
+  --color-page: var(--brand-paper, #f5f5f2);
+  --color-paper: var(--brand-white, #ffffff);
+  --color-ink: var(--brand-ink, #111111);
+  --color-on-ink: var(--brand-white, #ffffff);
+  --color-accent: var(--brand-accent, #f2dc00);
+  --color-muted: var(--brand-muted, #666662);
+  --color-rule: var(--brand-line, #c9c9c3);
+
+  /* Neutres communs utilisés dans les médias et les surfaces éditoriales. */
+  --color-soft-surface: #e8e8e3;
+  --color-media-placeholder: #d8d8d2;
+  --color-media-on-dark: #e0e0db;
+  --color-copy-on-dark: #c5c5c0;
+  --color-copy-on-dark-subtle: #d5d5d0;
+  --color-copy-on-dark-strong: #e4e4e0;
+  --color-copy-on-dark-soft: #d3d3ce;
+  --color-copy-strong: #44443f;
+  --color-rule-on-dark: #5b5b58;
+  --color-rule-on-accent-strong: rgb(var(--brand-ink-rgb, 17 17 17) / 45%);
+
+  /* Anneau double : sombre sur les fonds clairs/jaunes, accent sur les fonds sombres. */
+  --focus-ring-inner: var(--color-ink);
+  --focus-ring-outer: var(--color-accent);
+  --focus-outline-width: 3px;
+  --focus-outline-offset: 2px;
+  --focus-shadow-spread: 5px;
+
+  /* Tokens typographiques communs : les choix de famille restent configurables par marque. */
+  --font-display: var(--brand-display, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --font-body: var(--brand-body, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  --font-weight-display: var(--brand-weight-heavy, 800);
+  --tracking-display: var(--brand-tracking, -0.035em);
+  --tracking-label: var(--brand-label-tracking, 0.055em);
+  --type-caption: 0.72rem;
+  --type-small: 0.875rem;
+  --type-body: 1rem;
+  --type-lead: clamp(1.1rem, 1.35vw, 1.35rem);
+  --type-section: clamp(2.7rem, 6.8vw, 6rem);
+  --type-hero: clamp(3.5rem, 7.2vw, 6rem);
+  --leading-display: 0.86;
+  --leading-copy: 1.55;
+
+  /* Espace, grille et forme sont partagés entre marques. */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --section-space: clamp(5rem, 10vw, 10rem);
+  --page-gutter: clamp(1.25rem, 5.4vw, 5.5rem);
+  --content-width: 94rem;
+  --grid-gap: clamp(0.75rem, 1.8vw, 1.75rem);
+  --radius-control: 0;
+  --radius-card: 0;
+}

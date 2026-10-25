@@ -1,0 +1,67 @@
+/* Styles de présentation des prototypes 06B uniquement ; src/styles/base.css reste intact. */
+.audit-mode-banner {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 0.8rem var(--page-gutter); border-bottom: 1px solid var(--color-rule);
+  background: var(--color-paper); font-size: var(--type-caption);
+}
+.audit-mode-banner p { margin: 0.2rem 0; }
+.audit-mode-banner__label { font-weight: 800; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.audit-mode-banner a { flex: 0 0 auto; font-weight: 700; text-underline-offset: 0.25em; }
+.audit-legend {
+  display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; padding: 0.9rem var(--page-gutter);
+  border-bottom: 1px solid var(--color-rule); background: var(--color-page); font-size: var(--type-caption);
+}
+.audit-state { display: inline-block; padding: 0.35rem 0.55rem; border: 1px solid currentColor; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.04em; }
+.audit-state--a { color: var(--color-ink); }
+.audit-state--b { color: var(--color-ink); background: var(--color-accent); border-color: var(--color-accent); }
+.audit-state--c { color: var(--color-ink); background: var(--color-paper); }
+.audit-component-note { width: min(100%, var(--content-width)); margin: 0 auto 0.75rem; padding-inline: var(--page-gutter); }
+.audit-hero-shell { padding: clamp(3rem, 7vw, 6.5rem) var(--page-gutter); background: var(--color-ink); color: var(--color-on-ink); }
+.audit-hero-shell__inner { width: min(100%, var(--content-width)); margin-inline: auto; }
+.audit-hero-shell__eyebrow { margin: 0; color: var(--color-accent); font-size: var(--type-caption); font-weight: 800; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.audit-hero-shell h1 { max-width: 12ch; margin: 1rem 0 1.5rem; font-family: var(--font-display); font-size: clamp(3rem, 8.7vw, 7.8rem); font-weight: var(--font-weight-display); letter-spacing: var(--tracking-display); line-height: 0.88; text-transform: uppercase; }
+.audit-hero-shell__note { max-width: 55ch; margin: 0; color: var(--color-copy-on-dark-strong); font-size: var(--type-small); }
+.audit-gap { width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width)); margin: 1.5rem auto 0; padding: clamp(1.2rem, 2.6vw, 2.4rem); border: 1px solid var(--color-rule); background: var(--color-paper); color: var(--color-ink); }
+.audit-gap__state { margin: 0 0 1rem; font-size: var(--type-caption); font-weight: 900; letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.audit-gap h3 { max-width: 32ch; margin: 0; font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.8rem); letter-spacing: var(--tracking-display); line-height: 1; }
+.audit-gap dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; margin: 1.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--color-rule); }
+.audit-gap dl div { min-width: 0; }
+.audit-gap dt { margin-bottom: 0.4rem; font-size: var(--type-caption); font-weight: 900; letter-spacing: 0.035em; text-transform: uppercase; }
+.audit-gap dd { max-width: 60ch; margin: 0; color: var(--color-muted); font-size: var(--type-small); line-height: 1.5; }
+.audit-gap__footnote { margin: 1rem 0 0; font-size: var(--type-caption); font-weight: 700; }
+.audit-gap--hero { width: auto; margin: 2rem 0 0; border-color: var(--color-rule-on-dark); background: transparent; color: var(--color-on-ink); }
+.audit-gap--hero dl { border-color: var(--color-rule-on-dark); }
+.audit-gap--hero dd { color: var(--color-copy-on-dark-strong); }
+.audit-gap--hero .audit-gap__state { color: var(--color-accent); }
+.audit-gap--hero .audit-gap__footnote { color: var(--color-copy-on-dark-strong); }
+.audit-section { padding: clamp(4rem, 7vw, 7rem) var(--page-gutter); }
+.audit-section > .section-heading { width: min(100%, var(--content-width)); }
+.audit-section .audit-gap { width: min(100%, var(--content-width)); }
+.audit-section--soft { background: var(--color-soft-surface); }
+.audit-section--media { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.85fr); align-items: start; gap: clamp(2rem, 6vw, 6rem); background: var(--color-soft-surface); }
+.audit-section--media > .section-heading { grid-column: 1 / -1; margin-bottom: 0; }
+.audit-section--media .media-slot { width: 100%; min-height: 22rem; aspect-ratio: 1.25; }
+.audit-media-placeholder { display: flex; min-height: 20rem; flex-direction: column; justify-content: space-between; gap: 1.2rem; margin: 0; padding: clamp(1.2rem, 2.5vw, 2.4rem); background: var(--color-media-placeholder); color: var(--color-ink); }
+.audit-media-placeholder > span { align-self: flex-start; padding: 0.35rem 0.5rem; border: 1px solid currentColor; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.08em; }
+.audit-media-placeholder strong { max-width: 16ch; font-family: var(--font-display); font-size: clamp(1.6rem, 3.5vw, 3.4rem); letter-spacing: var(--tracking-display); line-height: 0.95; }
+.audit-media-placeholder p { max-width: 48ch; margin: 0; font-size: var(--type-caption); }
+.audit-section--media__copy { max-width: 45ch; padding-top: 1rem; }
+.audit-section--media__copy h3 { margin: 0 0 1rem; font-family: var(--font-display); font-size: clamp(2rem, 3.7vw, 4rem); letter-spacing: var(--tracking-display); line-height: 0.95; }
+.audit-section--media__copy p { color: var(--color-muted); font-size: var(--type-small); }
+.audit-section--media__copy .audit-state { margin-top: 1rem; }
+.audit-section--news .section-heading, .audit-section--agenda .section-heading { width: min(100%, var(--content-width)); }
+.audit-section--agenda { background: var(--color-accent); }
+.audit-section--agenda .section-heading p { color: var(--color-ink); }
+.audit-section--footer-gap { padding: 2rem var(--page-gutter); background: var(--color-soft-surface); }
+.audit-section--footer-gap .audit-gap { margin-top: 0; }
+.audit-datasource { width: min(100%, var(--content-width)); margin: 1.25rem auto 0; padding-inline: var(--page-gutter); color: var(--color-muted); font-size: var(--type-caption); }
+.audit-source-link { font-weight: 700; text-underline-offset: 0.2em; }
+@media (max-width: 760px) {
+  .audit-mode-banner { align-items: flex-start; flex-direction: column; }
+  .audit-hero-shell h1 { font-size: clamp(2.65rem, 12vw, 5rem); }
+  .audit-gap dl { grid-template-columns: 1fr; gap: 1rem; }
+  .audit-section--media { grid-template-columns: 1fr; gap: 1.5rem; }
+  .audit-section--media > .section-heading { grid-column: auto; }
+  .audit-media-placeholder { min-height: 16rem; }
+  .audit-section--media__copy { padding-top: 0; }
+}
