@@ -943,7 +943,7 @@ body.gcase-page {
   border-radius: 12px;
   background: #fff;
 }
-#scene-03 .prototype-view > a {
+#scene-03 .prototype-view > img {
   display: block;
   min-height: 0;
   flex: 1 1 auto;
@@ -956,9 +956,7 @@ body.gcase-page {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  transition: transform 240ms ease;
 }
-#scene-03 .prototype-view > a:hover img { transform: scale(1.025); }
 #scene-03 .prototype-caption {
   flex: 0 0 auto;
   padding: 10px 12px 11px;
@@ -1030,7 +1028,7 @@ body.gcase-page {
   #scene-03 .prototype-intro h2 { max-width: 25ch; font-size: 24px; }
   #scene-03 .prototype-intro > p:last-child { max-width: 42ch; font-size: 15px; }
   #scene-03 .prototype-gallery { grid-template-columns: minmax(0, 1fr); gap: 13px; }
-  #scene-03 .prototype-view > a { flex: none; aspect-ratio: .86; }
+  #scene-03 .prototype-view > img { flex: none; aspect-ratio: 1.35; }
   #scene-03 .prototype-caption { padding: 10px 12px 11px; }
   #scene-03 .prototype-caption h3 { font-size: 17px; }
   #scene-03 .prototype-caption p { font-size: 14px; }
